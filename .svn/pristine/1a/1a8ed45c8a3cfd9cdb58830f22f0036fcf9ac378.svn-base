@@ -1,0 +1,34 @@
+package com.chinasoft.fs.entity;
+
+import com.chinasoft.fs.entity.Product;
+
+public class ProductItem {
+    private Product product;
+    private int count;
+    public double totalMoney(){
+    	double price =product.getShopPrice();
+    	return price*count;
+    }
+	public Product getProduct() {
+		return product;
+	}
+	public void setProduct(Product product) {
+		this.product = product;
+	}
+	public int getCount() {
+		return count;
+	}
+	public void setCount(int count) {
+		this.count = count;
+	}
+	public ProductItem() {
+		
+	}
+	public ProductItem(Product product, int count) {
+		
+		this.product = product;
+		this.count = count;
+	}
+  
+    
+}

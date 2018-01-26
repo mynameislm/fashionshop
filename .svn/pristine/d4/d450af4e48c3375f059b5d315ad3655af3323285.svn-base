@@ -1,0 +1,80 @@
+package com.chinasoft.fs.entity;
+// default package
+
+/**
+ * Orderitems entity. @author MyEclipse Persistence Tools
+ */
+
+public class Orderitems implements java.io.Serializable {
+
+	// Fields
+
+	private String id;
+	private String oid;
+	private String pid;
+	private Double subtotal;
+	private Double count;
+
+	// Constructors
+
+	/** default constructor */
+	public Orderitems() {
+	}
+
+	/** minimal constructor */
+	public Orderitems(String id) {
+		this.id = id;
+	}
+
+	/** full constructor */
+	public Orderitems(String id, String oid, String pid, Double subtotal, Double count) {
+		this.id = id;
+		this.oid = oid;
+		this.pid = pid;
+		this.subtotal = subtotal;
+		this.count = count;
+	}
+
+	// Property accessors
+
+	public String getId() {
+		return this.id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getOid() {
+		return this.oid;
+	}
+
+	public void setOid(String oid) {
+		this.oid = oid;
+	}
+
+	public String getPid() {
+		return this.pid;
+	}
+
+	public void setPid(String pid) {
+		this.pid = pid;
+	}
+
+	public Double getSubtotal() {
+		return this.subtotal;
+	}
+
+	public void setSubtotal(Double subtotal) {
+		this.subtotal = subtotal;
+	}
+
+	public Double getCount() {
+		return this.count;
+	}
+
+	public void setCount(Double count) {
+		this.count = count;
+	}
+
+}

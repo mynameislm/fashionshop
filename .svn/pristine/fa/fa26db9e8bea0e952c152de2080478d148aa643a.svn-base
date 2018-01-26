@@ -1,0 +1,5 @@
+package com.chinasoft.fs.dao;
+
+public class ShoppingCartDaoImpl implements IShoppingCartDao{
+
+}

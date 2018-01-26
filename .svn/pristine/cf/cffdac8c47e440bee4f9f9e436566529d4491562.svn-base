@@ -1,0 +1,118 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Outside - Minimalist Ecommerce HTML Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    
+    <!-- All CSS Files -->
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Icon Font -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
+    <!-- Plugins css file -->
+    <link rel="stylesheet" href="css/plugins.css">
+    <!-- Theme main style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    
+</head>
+
+<body>
+
+     
+
+
+<!-- Body main wrapper start -->
+<div class="wrapper">
+
+
+
+<!-- PAGE BANNER SECTION -->
+<div class="page-banner-section section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="page-banner-content">
+                    <h1>blog details</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li class="active">blog details</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END PAGE BANNER SECTION -->
+    
+<!-- PAGE SECTION START -->
+<div class="page-section section pt-120 pb-45">
+	<div class="container">
+		<div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <!-- Blog Item -->
+                <div class="blog-item mb-75">
+                    <!-- Image -->
+                    <div class="image"><img src="img/blog/3.jpg" alt=""></div>
+                    <!-- Content -->
+                    <div class="content fix">
+                        <!-- Date -->
+                        <span class="date">
+                            <span class="day">12</span>
+                            <span class="month">/ feb</span>
+                        </span>
+                        <!-- Title -->
+                        <h4 class="title">If you are going to use a pass.</h4>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration some form, by injected humour, or randomised words which don't look even slightly believable. Ifyouare going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden i the middletext.There are many variations of passages of Lorem Ipsum available, but the majority hsuffered alteration in some form, by injected humour, There are many variations of passages of Lorem Ipsum able, but the majority have suffered alteration in some form. there isn't anything embarrassing hidden.</p>
+                        <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handfulmodel sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        <div class="row mt-50 mb-20">
+                            <div class="col-sm-6 mb-30"><img src="img/blog/4.jpg" alt=""></div>
+                            <div class="col-sm-6 mb-30"><img src="img/blog/5.jpg" alt=""></div>
+                        </div>
+                        <blockquote>
+                            <p>"At vero eos et accusamus et iusto odio dignissimos ducimus Qui blanditiis praesentium voluptatum deleniti atque”</p>
+                        </blockquote>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration some form, by injected humour, or randomised words which don't look even slightly believable. Ifyouare going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden i the middletext.There are many variations of passages of Lorem Ipsum available,</p>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+</div>
+<!-- PAGE SECTION END --> 
+
+
+   
+
+</div>
+<!-- Body main wrapper end -->
+
+
+<!-- Placed JS at the end of the document so the pages load faster -->
+
+<!-- jQuery latest version -->
+<script src="js/vendor/jquery-3.1.1.min.js"></script>
+<!-- Bootstrap js -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Plugins js -->
+<script src="js/plugins.js"></script>
+<!-- Ajax Mail js -->
+<script src="js/ajax-mail.js"></script>
+<!-- Main js -->
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

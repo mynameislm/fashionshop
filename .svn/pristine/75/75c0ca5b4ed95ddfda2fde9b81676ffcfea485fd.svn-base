@@ -1,0 +1,8 @@
+package com.chinasoft.fs.dao;
+
+public class UserDao {
+
+	public boolean userLogin(){
+		
+	}
+}

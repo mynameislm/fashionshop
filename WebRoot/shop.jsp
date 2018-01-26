@@ -1,0 +1,318 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Outside - Minimalist Ecommerce HTML Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    
+    <!-- All CSS Files -->
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Icon Font -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
+    <!-- Plugins css file -->
+    <link rel="stylesheet" href="css/plugins.css">
+    <!-- Theme main style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    
+</head>
+
+<body>
+
+     
+
+<!-- Body main wrapper start -->
+<div class="wrapper">
+
+<!-- START HEADER SECTION -->
+<jsp:include page="header.jsp"></jsp:include>
+<!-- END HEADER SECTION -->
+
+<!-- PAGE BANNER SECTION -->
+<div class="page-banner-section section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="page-banner-content">
+                    <h1>shop category</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li class="active">shop</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END PAGE BANNER SECTION -->
+    
+<!-- PAGE SECTION START -->
+<div class="page-section section pt-120 pb-120">
+    <div class="container">
+       
+        <div class="row">
+            <!-- Isotop Product Filter -->
+            <div class="isotope-product-filter col-xs-8">
+                <button class="active" data-filter="*">所有</button>
+                <button data-filter=".chair">衣服</button>
+                <button data-filter=".ptable">裤子</button>
+                <button data-filter=".home-decor">鞋子</button>
+                <button data-filter=".lighting">其他</button>
+            </div>
+            <!-- Product Filter Toggle -->
+            <div class="col-xs-4">
+                <button class="product-filter-toggle">filter</button>
+            </div>
+        </div>
+        
+        <!-- Product Filter Wrapper -->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="product-filter-wrapper">
+                    <!-- Product Filter -->
+                    <div class="product-filter col-md-3 col-sm-6 col-xs-12 mb-30">
+                        <h5>商品排序</h5>
+                        <ul class="sort-by">
+                            <li><a href="#">热门商品</a></li>
+                            <li><a href="#">最新商品</a></li>
+                            <li><a href="#">价格:由低到高</a></li>
+                            <li><a href="#">价格:由高到低</a></li>
+                        </ul>
+                    </div>
+                
+        <!-- Product Filter -->
+                    <div class="product-filter col-md-3 col-sm-6 col-xs-12 mb-30">
+                        <h5>价格区间</h5>
+                        <div id="price-range"></div>
+                        <div class="price-values">
+                            <span>价格:</span>
+                            <input type="text" class="price-amount" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="isotope-grid row">
+           
+            <!-- product-item product-item-2 start -->
+            <div class="isotope-item ptable col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-50">
+                <div class="product-item product-item-2 text-center">
+                    <!-- Product Image -->
+                    <div class="product-img">
+                        <!-- Image -->
+                        <a class="image" href="product-details.html"><img src="img/product/19.jpg" alt=""/></a>
+                        <!-- Action Button -->
+                        <div class="action-btn-2">
+                            <a href="#" title="Add to Cart"><i class="pe-7s-cart"></i></a>
+                            <a href="#" data-toggle="modal"  data-target="#quickViewModal" title="Quick View"><i class="pe-7s-look"></i></a>
+                            <a class="wishlist" href="#" title="Wishlist"><i class="pe-7s-like"></i></a>
+                        </div>
+                    </div>
+                    <!-- Portfolio Info -->
+                    <div class="product-info">
+                        <!-- Title -->
+                        <h5 class="title"><a href="${pageContext.request.contextPath }/product-details.jsp">High Tops</a></h5>
+                        <!-- Price -->
+                        <div class="price-ratting fix">
+                            <span class="price"><span class="new">€137.00</span><span class="old">€115.00</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- product-item product-item-2 end -->
+          
+        <!-- <div class="row">
+            <div class="text-center col-xs-12 mt-30">
+                <a href="#" class="btn load-more-product">load more</a>
+            </div>
+        </div> -->
+    </div>
+</div>
+
+<div>
+
+</div>
+<!-- PAGINATION -->
+<div style="width: 380px; margin: 0 auto; margin-top: 50px;">
+		<ul class="pagination" style="text-align: center; margin-top: 10px;">
+			<li class="disabled"><a href="#" aria-label="Previous"><span
+					aria-hidden="true">&laquo;</span></a></li>
+			<li class="active"><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#">6</a></li>
+			<li><a href="#">7</a></li>
+			<li><a href="#">8</a></li>
+			<li><a href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span>
+			</a></li>
+		</ul>
+</div>
+<!-- PAGE SECTION END -->
+
+<!-- QUICK VIEW MODAL START-->
+<div id="quickViewModal" class="modal fade" >
+    <div class="container">
+        <div class="modal-content row">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal" ><span aria-hidden="true">&times;</span></button>
+                <!-- QuickView Product Images -->
+                <div class="col-md-5 col-sm-6 col-xs-12 mb-40">	
+                    <!-- Tab panes -->
+                    <div class="tab-content mb-10">
+                        <div class="pro-large-img tab-pane active" id="pro-large-img-1">
+                            <img src="img/product/19.jpg" alt="" />
+                        </div>
+                        <div class="pro-large-img tab-pane" id="pro-large-img-2">
+                            <img src="img/product/18.jpg" alt="" />
+                        </div>
+                        <div class="pro-large-img tab-pane" id="pro-large-img-3">
+                            <img src="img/product/20.jpg" alt="" />
+                        </div>
+                        <div class="pro-large-img tab-pane" id="pro-large-img-4">
+                            <img src="img/product/22.jpg" alt="" />					
+                        </div>
+                        <div class="pro-large-img tab-pane" id="pro-large-img-5">
+                            <img src="img/product/23.jpg" alt="" />
+                        </div>
+                    </div>
+                    <!-- QuickView Product Thumbnail Slider -->
+                    <div class="pro-thumb-img-slider">
+                        <div><a href="#pro-large-img-1" data-toggle="tab"><img src="img/product/19.jpg" alt="" /></a></div>
+                        <div><a href="#pro-large-img-2" data-toggle="tab"><img src="img/product/18.jpg" alt="" /></a></div>
+                        <div><a href="#pro-large-img-3" data-toggle="tab"><img src="img/product/20.jpg" alt="" /></a></div>
+                        <div><a href="#pro-large-img-4" data-toggle="tab"><img src="img/product/22.jpg" alt="" /></a></div>
+                        <div><a href="#pro-large-img-5" data-toggle="tab"><img src="img/product/23.jpg" alt="" /></a></div>
+                    </div>
+                </div>
+                <!-- QuickView Product Details -->
+                <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
+                    <div class="product-details section">
+                        <!-- Title -->
+                        <h1 class="title">High Tops</h1>
+                        <!-- Price Ratting -->
+                        <div class="price-ratting section">
+                            <!-- Price -->
+                            <span class="price float-left"><span class="new">€ 120.00</span></span>
+                            <!-- Ratting -->
+                            <span class="ratting float-right">
+                                <i class="fa fa-star active"></i>
+                                <i class="fa fa-star active"></i>
+                                <i class="fa fa-star active"></i>
+                                <i class="fa fa-star active"></i>
+                                <i class="fa fa-star active"></i>
+                                <span> (01 Customer Review)</span>
+                            </span>
+                        </div>
+                        <!-- Short Description -->
+                        <div class="short-desc section">
+                            <h5 class="pd-sub-title">Quick Overview</h5>
+                            <p>There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani na.</p>
+                        </div>
+                        <!-- Product Size -->
+                        <div class="product-size section">
+                            <h5 class="pd-sub-title">Select Size</h5>
+                            <button>s</button>
+                            <button class="active">m</button>
+                            <button>x</button>
+                            <button>xl</button>
+                        </div>
+                        <!-- Product Color -->
+                        <div class="color-list section">
+                            <h5 class="pd-sub-title">Select Color</h5>
+                            <button class="active" style="background-color: #51bd99;"><i class="fa fa-check"></i></button>
+                            <button style="background-color: #ff7a5f;"><i class="fa fa-check"></i></button>
+                            <button style="background-color: #baa6c2;"><i class="fa fa-check"></i></button>
+                            <button style="background-color: #414141;"><i class="fa fa-check"></i></button>
+                        </div>
+                        <!-- Quantity Cart -->
+                        <div class="quantity-cart section">
+                            <div class="product-quantity">
+                                <input type="text" value="0">
+                            </div>
+                            <button class="add-to-cart">add to cart</button>
+                        </div>
+                        <!-- Usefull Link -->
+                        <ul class="usefull-link section">
+                            <li><a href="#"><i class="pe-7s-mail"></i> Email to a Friend</a></li>
+                            <li><a href="#"><i class="pe-7s-like"></i> Wishlist</a></li>
+                            <li><a href="#"><i class="pe-7s-print"></i> print</a></li>
+                        </ul>
+                        <!-- Share -->
+                        <div class="share-icons section">
+                            <span>share :</span>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- QUICK VIEW MODAL END-->
+
+<!-- FOOTER TOP SECTION START -->
+<jsp:include page="footer.jsp"></jsp:include>
+<!-- FOOTER TOP SECTION END -->  
+
+<!-- FOOTER BOTTOM SECTION START -->
+<div class="footer-bottom-section section">
+	<div class="container">
+		<div class="row">
+            <!-- Copyright -->
+			<div class="copyright text-left col-sm-6 col-xs-12">
+				<p>Powered by <a href="https://hastech.company/">HasTech</a></p>
+			</div>
+			<!-- Payment Method -->
+			<div class="footer-menu text-right col-sm-6 col-xs-12">
+				<a href="#">Help & Support</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- FOOTER BOTTOM SECTION END -->  
+   
+
+</div>
+<!-- Body main wrapper end -->
+
+
+<!-- Placed JS at the end of the document so the pages load faster -->
+
+<!-- jQuery latest version -->
+<script src="js/vendor/jquery-3.1.1.min.js"></script>
+<!-- Bootstrap js -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Plugins js -->
+<script src="js/plugins.js"></script>
+<!-- Ajax Mail js -->
+<script src="js/ajax-mail.js"></script>
+<!-- Main js -->
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
